@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using GameStore.Domain.Abstract;
@@ -10,6 +8,16 @@ using GameStore.WebUI.Controllers;
 
 namespace GameStore.UnitTests
 {
+    [TestClass]
+    public class Service1Test
+    {
+        [TestMethod]
+        public void Test1()
+        {
+            Assert.IsTrue(false);
+        }
+    }
+
     [TestClass]
     public class UnitTest1
     {
@@ -26,8 +34,10 @@ namespace GameStore.UnitTests
                 new Game { GameId = 4, Name = "Игра4"},
                 new Game { GameId = 5, Name = "Игра5"}
             });
-            GameController controller = new GameController(mock.Object);
-            controller.pageSize = 3;
+            GameController controller = new GameController(mock.Object)
+            {
+                pageSize = 3
+            };
 
             // Действие (act)
             IEnumerable<Game> result = (IEnumerable<Game>)controller.List(2).Model;
@@ -39,4 +49,5 @@ namespace GameStore.UnitTests
             Assert.AreEqual(games[1].Name, "Иг1qsd");
         }
     }
+
 }

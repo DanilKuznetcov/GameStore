@@ -11,7 +11,7 @@ namespace GameStore.WebUI.Controllers
     public class GameController : Controller
     {
         private IGameRepository repository;
-        public int pageSize = 6;
+        public int pageSize = 4;
 
         public GameController(IGameRepository repo)
         {
