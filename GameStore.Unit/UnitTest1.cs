@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using GameStore.Domain.Abstract;
@@ -35,9 +33,8 @@ namespace GameStore.UnitTests
             // Утверждение (assert)
             List<Game> games = result.ToList();
             Assert.IsTrue(games.Count == 2);
-            Assert.AreEqual(games[0].Name, "Игра");
-            Assert.AreEqual(games[1].Name, "Иг1qsd");
-            Assert.IsTrue(false);
+            Assert.AreEqual(games[0].Name, "Игра4");
+            Assert.AreEqual(games[1].Name, "Игра5");
         }
     }
 }

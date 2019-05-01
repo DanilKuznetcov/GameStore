@@ -1,0 +1,31 @@
+[33mcommit 70da372ea5d55347dd4a7d05cfd6ba08211ac15d[m[33m ([m[1;36mHEAD -> [m[1;32mrecover-branch[m[33m)[m
+Author: DanilKuznetcov <qspirit99@gmail.com>
+Date:   Tue Apr 30 17:58:26 2019 +0300
+
+    feature pagination
+
+[33mcommit 43701ddd15cbf7b7ef18609a7563720313788a42[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: DanilKuznetcov <qspirit99@gmail.com>
+Date:   Tue Apr 30 07:14:41 2019 +0300
+
+    feature database instead moq
+
+[33mcommit dcf5bef5fc8cb413a49e67d4725c7842c6a0e41f[m
+Author: DanilKuznetcov <qspirit99@gmail.com>
+Date:   Mon Apr 29 16:23:36 2019 +0300
+
+    add gameList
+    
+    Using Ninject, Maq. Imitated storage. Simple view GameList.
+
+[33mcommit e360ca8a7b79dd994e918fef53489503a3de3a62[m
+Author: DanilKuznetcov <qspirit99@gmail.com>
+Date:   Fri Apr 26 19:47:53 2019 +0300
+
+    Add project files.
+
+[33mcommit b37a7ef274e25b49610e9acabd1bb9acd0b92b1f[m
+Author: DanilKuznetcov <qspirit99@gmail.com>
+Date:   Fri Apr 26 19:47:51 2019 +0300
+
+    Add .gitignore and .gitattributes.
