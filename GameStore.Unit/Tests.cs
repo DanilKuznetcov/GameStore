@@ -10,7 +10,7 @@ using GameStore.WebUI.HtmlHelpers;
 using System;
 using System.Web.Mvc;
 
-namespace GameStore.UnitTests
+namespace GameStore.Unit
 {
     [TestClass]
     public class Tests
