@@ -14,15 +14,13 @@ namespace GameStore.WebUI.Controllers
             repository = repo;
         }
 
-        public Cart GetCart()
+        public ViewResult Index(Cart cart, string returnUrl)
         {
-            Cart cart = (Cart)Session["Cart"];
-            if (cart == null)
+            return View(new CartIndexViewModel
             {
-                cart = new Cart();
-                Session["Cart"] = cart;
-            }
-            return cart;
+                Cart = cart,
+                ReturnUrl = returnUrl
+            });
         }
 
         public RedirectToRouteResult AddToCart(Cart cart, int gameId, string returnUrl)
@@ -47,15 +45,6 @@ namespace GameStore.WebUI.Controllers
                 cart.RemoveLine(game);
             }
             return RedirectToAction("Index", new { returnUrl });
-        }
-
-        public ViewResult Index(Cart cart, string returnUrl)
-        {
-            return View(new CartIndexViewModel
-            {
-                Cart = cart,
-                ReturnUrl = returnUrl
-            });
         }
     }
 }
