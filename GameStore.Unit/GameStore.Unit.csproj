@@ -87,9 +87,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminSecurityTests.cs" />
     <Compile Include="AdminTests.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="CartTests.cs" />
+    <Compile Include="ImageTest.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
